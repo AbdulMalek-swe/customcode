@@ -1,0 +1,73 @@
+.cardh-ml{
+    
+    position: relative;
+}
+.card1-ml{
+    background-color: rgb(0, 102, 255);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+}
+.card1-ml::after{
+    content: "";
+    inset: 4px;
+    position: absolute;
+    background-color: rgb(0, 102, 255);
+}
+.card1-ml::before{
+    content: " ";
+   position: absolute;
+   width: 150px;
+   height: 160%;
+   background:rgb(128, 0, 102);
+   animation: run 4s linear infinite;
+}
+@keyframes run {
+    0%{
+          transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+  }
+}
+
+/* second card design here  */
+.card1img-ml{
+    background-color: rgb(0, 102, 255);
+    width: 150px;
+    height: 200px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+    top: -50px;
+    z-index: 10;
+}
+.card1img-ml::after{
+    content: "";
+    inset: 3px;
+    position: absolute;
+    background-color: rgb(0, 102, 255);
+}
+.card1img-ml::before{
+    content: " ";
+   position: absolute;
+   width: 170px;
+   height: 140%;
+   background:rgb(128, 0, 102);
+   animation: runs 4s linear infinite;
+}
+@keyframes runs {
+    0%{
+          transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+  }
+}
